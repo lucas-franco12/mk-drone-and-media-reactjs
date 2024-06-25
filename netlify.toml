@@ -1,0 +1,9 @@
+[build]
+    command = "npm run build"
+  publish = "mk-drone-client/public"
+  functions = "mk-drone-client/netlify-functions"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
